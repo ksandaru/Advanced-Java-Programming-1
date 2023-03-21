@@ -8,8 +8,11 @@ public class test3 {
 //        printShoppingList("Iphone XS", "iphone 13pro max");
 
 //        For 3
-        String[] items = {"bread", "Cake", "chocolate", "pastry", "noodles"};
-        printShoppingList(items);
+//        String[] items = {"bread", "Cake", "chocolate", "pastry", "noodles"};
+//        printShoppingList(items);
+
+//        For 4
+        printShoppingList("bread", "Cake", "chocolate", "pastry", "noodles");
     }
 
 
@@ -32,12 +35,21 @@ public class test3 {
 
 
 
-    //    3. used varargs, then can have variable number of arguments (good)
-    public static void printShoppingList(String[] strings){
-        System.out.println("Shoppping List");
-        for (int i = 0; i < strings.length; i++) {
-            System.out.println(i+1+" :"+ strings[i]);
-        }
-        System.out.println();
+    //    3. then can have variable number of arguments (good)
+//    public static void printShoppingList(String[] strings){
+//        System.out.println("Shoppping List");
+//        for (int i = 0; i < strings.length; i++) {
+//            System.out.println(i+1+" :"+ strings[i]);
+//        }
+//        System.out.println();
+//    }
+
+//    4. better solution to have var args (functionally 3 and 4 methods are same)
+public static void printShoppingList(String... strings){
+    System.out.println("Shoppping List");
+    for (int i = 0; i < strings.length; i++) {
+        System.out.println(i+1+" :"+ strings[i]);
     }
+    System.out.println();
+}
 }

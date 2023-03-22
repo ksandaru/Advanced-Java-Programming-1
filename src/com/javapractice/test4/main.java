@@ -26,7 +26,7 @@ public class main {
         buildings.add(new Office()); // ok
         buildings.add(new Office()); // ok
         buildings.add(new Office()); // ok, because office is a subtype of building
-        printBuildings(offices); //bad,  because can not take List<Office> is subtype of  List<Building>
+//        printBuildings(offices); //bad,  because can not take List<Office> is subtype of  List<Building>
 
 
         }

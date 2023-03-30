@@ -1,5 +1,9 @@
 package com.javapractice.LinkedlistVsArrayList;
 
+// sometimes it will take less time for araylist to delete or insert item from middle, it depends on array size and
+//the number of shifting elements, if the removing or inserting location is near to end or start,
+//then also it will take less time..
+//(the time sometimes depend on implementation and hardware performance also)
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
